@@ -104,3 +104,8 @@ Route::group(['prefix' => 'student'],function(){
 
 //練習十
 Route::get('cool', 'Cool\TestController@index');
+
+//練習十
+Route::group(['namespace' => 'Cool'],function (){
+    Route::get('cool', 'TestController@index');
+});
